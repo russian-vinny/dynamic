@@ -1,0 +1,13 @@
+# CMake / Geode build trees
+build/
+build-clang/
+build-dynamic/
+ci-out/
+
+# Local build logs
+build_clang_*.log
+
+# Local-only source backups and old packages
+*.bak-*
+*.geode
+rename-backup-*/
