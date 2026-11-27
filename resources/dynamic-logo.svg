@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="336" height="336" viewBox="0 0 336 336">
+  <!-- Kinetic Dynamic D: vector source for the static Geode frame.
+       The in-game UI uses 12 PNG frames rendered from render_dynamic_logo_v2.py. -->
+  <defs>
+    <linearGradient id="field" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#241452"/>
+      <stop offset="1" stop-color="#08152f"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7df9ff"/>
+      <stop offset="1" stop-color="#b86bff"/>
+    </linearGradient>
+    <filter id="bloom" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <clipPath id="rounded">
+      <rect width="336" height="336" rx="72"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#rounded)">
+    <rect width="336" height="336" fill="url(#field)"/>
+
+    <!-- faint kinetic rails -->
+    <g stroke="#7df9ff" stroke-width="1.2" opacity="0.035">
+      <path d="M-180 0 L180 336 M-146 0 L214 336 M-112 0 L248 336 M-78 0 L282 336 M-44 0 L316 336 M-10 0 L350 336 M24 0 L384 336"/>
+    </g>
+
+    <!-- center bloom -->
+    <circle cx="168" cy="168" r="120" fill="#8b5cff" opacity="0.16" filter="url(#bloom)"/>
+
+    <!-- broken orbit arcs (frame 00 positions) -->
+    <g fill="none" stroke-linecap="round">
+      <path d="M 286.7 91.0 A 135 135 0 0 1 279.6 208.3" stroke="#7df9ff" stroke-width="3" opacity="0.82"/>
+      <path d="M 87.7 289.9 A 128 128 0 0 1 40.5 137.0" stroke="#b86bff" stroke-width="3" opacity="0.75"/>
+      <path d="M 54.7 65.9 A 141 141 0 0 1 205.4 37.4" stroke="#7df9ff" stroke-width="3" opacity="0.6"/>
+    </g>
+    <circle cx="286.7" cy="91.0" r="5.5" fill="#ffffff" opacity="0.9"/>
+
+    <!-- breathing speed streaks -->
+    <g stroke-linecap="round" opacity="0.6">
+      <path d="M26 94 H88" stroke="#7df9ff" stroke-width="8"/>
+      <path d="M18 122 H74" stroke="#b86bff" stroke-width="6"/>
+      <path d="M10 168 H82" stroke="#7df9ff" stroke-width="10"/>
+      <path d="M18 214 H74" stroke="#b86bff" stroke-width="6"/>
+      <path d="M26 242 H88" stroke="#7df9ff" stroke-width="8"/>
+    </g>
+
+    <!-- kinetic ribbon D: glow, chromatic edge, main stroke -->
+    <path d="M106 82 V254 C176 254 252 222 252 168 C252 114 176 82 106 82 Z"
+          fill="none" stroke="#8b5cff" stroke-width="38" opacity="0.22" filter="url(#bloom)"/>
+    <path d="M108.5 80 V252" fill="none" stroke="#7df9ff" stroke-width="30" opacity="0.28"/>
+    <path d="M106 82 V254 C176 254 252 222 252 168 C252 114 176 82 106 82 Z"
+          fill="none" stroke="url(#ribbon)" stroke-width="24" stroke-linejoin="round"/>
+
+    <!-- inner timing rail -->
+    <path d="M116 168 H150 L170 126 L194 208 L214 168 H252"
+          fill="none" stroke="#08152f" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M170 126 L194 208" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.92"/>
+
+    <!-- comet head on the D outline -->
+    <circle cx="106" cy="82" r="7" fill="#ffffff"/>
+  </g>
+</svg>
