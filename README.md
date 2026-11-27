@@ -1,10 +1,8 @@
 # Dynamic
 
-by vinny
+**Dynamic Geometry Dash** source and releases live at [`russian-vinny/dynamic`](https://github.com/russian-vinny/dynamic). Dynamic is a **Geometry Dash 2.2 Geode mod** by vinny (@v1nny0): a **predictive input buffer** that fixes early clicks and early releases with ghost simulation. Download **`dynamic.geode`** from the [latest release](https://github.com/russian-vinny/dynamic/releases/latest).
 
-a predictive input cheat that fixes your early clicks and makes them accurate.
-
-built for **geometry dash 2.2** (gd 2.2081, geode 5.11.2) on windows, macos, android and ios. **f6** cycles stages anywhere. **f9** opens a custom in-game control panel with stage controls, a live log, copy log and a terminal shortcut. on mobile, a draggable **Dynamic** button opens the same panel. both desktop keys are geode keybinds, so you can rebind them in mod settings or the keybinds popup.
+Built for **Geometry Dash 2.2** (GD 2.2081, Geode 5.11.2) on Windows, macOS, Android and iOS. **F6** cycles stages anywhere. **F9** opens a custom in-game control panel with stage controls, a live log, copy log and a terminal shortcut. On mobile, a draggable **Dynamic** button opens the same panel. Both desktop keys are Geode keybinds, so you can rebind them in mod settings or the keybinds popup.
 
 ## what it does
 
@@ -124,7 +122,7 @@ the packaged mod ends up in `build-win/` when cross compiling from linux (`build
 
 ## installation
 
-copy the resulting .geode file into geometry dash's geode/mods folder and restart the game. enable **dynamic** in the geode mod list. the defaults work out of the box so you can rebind the keys in mod settings if you want different ones.
+Download [`dynamic.geode`](https://github.com/russian-vinny/dynamic/releases/latest) from the [`russian-vinny/dynamic` releases](https://github.com/russian-vinny/dynamic/releases/latest), copy it into Geometry Dash's `geode/mods` folder, and restart the game. Enable **Dynamic** in the Geode mod list. The defaults work out of the box; rebind the keys in mod settings if you want different ones.
 
 ## credits
 
